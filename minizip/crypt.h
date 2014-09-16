@@ -28,7 +28,7 @@
 */
 
 #define CRC32(c, b) ((*(pcrc_32_tab+(((int)(c) ^ (b)) & 0xff))) ^ ((c) >> 8))
-
+#include <time.h>
 /***********************************************************************
  * Return the next byte in the pseudo-random sequence
  */
